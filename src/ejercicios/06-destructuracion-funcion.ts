@@ -2,7 +2,7 @@
     ===== Código de TypeScript =====
 */
 
-interface Producto {
+export interface Producto {
     desc: string,
     precio: number,
 }
@@ -17,7 +17,7 @@ const telefono: Producto = {
     precio: 150,
 }
 
-function calcularIVA(productos: Producto[]):[number, number] {
+export function calcularIVA(productos: Producto[]):[number, number] {
 
     let total = 0;
 
